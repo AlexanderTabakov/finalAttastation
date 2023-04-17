@@ -1,0 +1,16 @@
+.header > h1 {
+    color: white;
+    width: 335px;
+    height: 38px;
+    left: 70px;
+    top: 54px;
+
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 38px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+}
