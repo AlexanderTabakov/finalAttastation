@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/module_react/static/css/main.6635c5f1.css",
-    "main.js": "/module_react/static/js/main.e9c4347a.js",
+    "main.css": "/module_react/static/css/main.5f4f304b.css",
+    "main.js": "/module_react/static/js/main.04b67a9d.js",
     "static/js/787.28cb0dcd.chunk.js": "/module_react/static/js/787.28cb0dcd.chunk.js",
     "static/media/Oysters.svg": "/module_react/static/media/Oysters.33db7b679957c0f310918d0eb88b8800.svg",
     "static/media/Ribs.svg": "/module_react/static/media/Ribs.93a14528ad5c778e8368b9da18c01e91.svg",
     "static/media/Shrimps.svg": "/module_react/static/media/Shrimps.511e36854d157cbf709c2749aa8a258a.svg",
     "index.html": "/module_react/index.html",
-    "main.6635c5f1.css.map": "/module_react/static/css/main.6635c5f1.css.map",
-    "main.e9c4347a.js.map": "/module_react/static/js/main.e9c4347a.js.map",
+    "main.5f4f304b.css.map": "/module_react/static/css/main.5f4f304b.css.map",
+    "main.04b67a9d.js.map": "/module_react/static/js/main.04b67a9d.js.map",
     "787.28cb0dcd.chunk.js.map": "/module_react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6635c5f1.css",
-    "static/js/main.e9c4347a.js"
+    "static/css/main.5f4f304b.css",
+    "static/js/main.04b67a9d.js"
   ]
 }
