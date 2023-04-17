@@ -6,4 +6,55 @@
     padding: 40px 20px;
 }
 
+.card:hover > .wrapper > .text,
+.card:hover > .text {
+    color: #D58C51;
+}
+
+.text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.wrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+
+.addToCartBtn {
+    background-color: #161516;
+    border: white solid 2px ;
+    border-radius: 50%;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+}
+
+.addToCartBtn:hover {
+    background-color: orange;
+}
+
+
+
 

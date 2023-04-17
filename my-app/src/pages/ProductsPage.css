@@ -7,7 +7,7 @@ body {
 .product-wrapper {
     margin: 80px 70px;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     gap: 35px;
     flex-wrap: wrap;
 }
