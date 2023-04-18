@@ -9,14 +9,15 @@ import './ProductCard.css'
 // import '../../assets/Shrimps.svg'
 
 // const ProductCard = (image, title, description) => {
-const ProductCard = ({image, title, description, price}) => {
+const ProductCard = ({image, title, description, price, weight}) => {
     return (
         <div className={'card'}>
             <img className={'image'} src={image} alt="product"/>
             <p className={'text title'}>{title}</p>
             <p className={'text description'}>{description}</p>
             <div className={'wrapper'}>
-                <p className={'text price'}>{price} ₽</p>
+                <p className={'text price'}>{price}₽ / {weight}</p>
+                {/*<p className={'text weight'}> /{weight}</p>*/}
                 <button className={'addToCartBtn'}>+</button>
             </div>
 

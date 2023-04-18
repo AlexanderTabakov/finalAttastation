@@ -4,6 +4,7 @@
     box-sizing: border-box;
     border: 1px solid #D58C51;
     padding: 40px 20px;
+    position: relative;
 }
 
 .card:hover > .wrapper > .text,
