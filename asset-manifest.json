@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/module_react/static/css/main.28db98a2.css",
-    "main.js": "/module_react/static/js/main.ae5dd63f.js",
+    "main.css": "/module_react/static/css/main.01f77f8e.css",
+    "main.js": "/module_react/static/js/main.d953da97.js",
     "static/js/787.28cb0dcd.chunk.js": "/module_react/static/js/787.28cb0dcd.chunk.js",
     "static/media/Oysters.svg": "/module_react/static/media/Oysters.33db7b679957c0f310918d0eb88b8800.svg",
     "static/media/Ribs.svg": "/module_react/static/media/Ribs.93a14528ad5c778e8368b9da18c01e91.svg",
     "static/media/Shrimps.svg": "/module_react/static/media/Shrimps.511e36854d157cbf709c2749aa8a258a.svg",
     "static/media/Basket-Icon.svg": "/module_react/static/media/Basket-Icon.72e035aa7c2acbb899c9f23e2b1122b4.svg",
     "index.html": "/module_react/index.html",
-    "main.28db98a2.css.map": "/module_react/static/css/main.28db98a2.css.map",
-    "main.ae5dd63f.js.map": "/module_react/static/js/main.ae5dd63f.js.map",
+    "main.01f77f8e.css.map": "/module_react/static/css/main.01f77f8e.css.map",
+    "main.d953da97.js.map": "/module_react/static/js/main.d953da97.js.map",
     "787.28cb0dcd.chunk.js.map": "/module_react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28db98a2.css",
-    "static/js/main.ae5dd63f.js"
+    "static/css/main.01f77f8e.css",
+    "static/js/main.d953da97.js"
   ]
 }
