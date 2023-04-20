@@ -21,8 +21,22 @@
     justify-content: space-between;
     gap: 35px;
     flex-wrap: wrap;
-    padding: 0 20px;
+    padding: 0 180px;
     /*width: 1600px;*/
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: right;
+    padding: 5px;
+
 }
 
 .basket > .image {
@@ -31,15 +45,11 @@
 
 .basket {
     display: flex;
+    align-items: center;
+
 
 }
 
-.basket > p {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 21px;
-    text-align: right;
+.order > p {
+    margin: 0px;
 }

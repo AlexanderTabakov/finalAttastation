@@ -9,8 +9,12 @@ const Header = () => {
         <div className={'header'}>
             <h1>Наша продукция</h1>
             <div className={'basket'}>
-                <p> 3 Товара
-                    на сумму 3500 ₽</p>
+
+                <div className={'order'}>
+                    <p> 3 Товара </p>
+                    <p> на сумму 3500 ₽</p>
+                </div>
+
                 <img className={'image'} src={imgBasket} alt="product"/>
             </div>
         </div>
