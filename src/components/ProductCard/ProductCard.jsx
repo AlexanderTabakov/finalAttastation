@@ -4,12 +4,22 @@ import {products} from "../../pages/ProducsPage/Products";
 
 import './ProductCard.css'
 
-// import '../../assets/Oysters.svg'
-// import '../../assets/Ribs.svg'
-// import '../../assets/Shrimps.svg'
 
-// const ProductCard = (image, title, description) => {
-const ProductCard = ({image, title, description, price, weight}) => {
+const ProductCard = ({id, image, title, description, price, weight}) => {
+
+    const onAddToCartClickHandler = () => {
+
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        const product = { id, title, image, price, weight}
+
+        cart.push(product)
+
+        localStorage.setItem('cart', JSON.stringify(cart))
+
+
+    }
+
     return (
         <div className={'card'}>
             <img className={'image'} src={image} alt="product"/>
@@ -19,8 +29,7 @@ const ProductCard = ({image, title, description, price, weight}) => {
             </div>
             <div className={'wrapper'}>
                 <p className={'text price'}>{price}₽ / {weight}</p>
-                {/*<p className={'text weight'}> /{weight}</p>*/}
-                <button className={'addToCartBtn'}>+</button>
+                <button className={'addToCartBtn'} onClick={onAddToCartClickHandler}>+</button>
             </div>
 
 
