@@ -1,19 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import ProductPage from "./pages/ProductPage";
-import Header from "./components/header/Header";
+import Header from "./components/Header/Header";
 import reportWebVitals from './reportWebVitals';
-import Basket from "./components/Basket/Busket";
+import Basket from "./pages/BasketPage/BasketPage";
+
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <ProductPage/>
+    },{
+        path: "/cart",
+        element: <Basket/>
+    },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
 
-      <>
-          <Header/>
-    <ProductPage />
-          <Basket />
-      </>
+      <RouterProvider router={router} />
 
   </React.StrictMode>
 );
