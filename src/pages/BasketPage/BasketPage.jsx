@@ -1,17 +1,33 @@
 import React from "react";
 import './BasketPage.css'
-import {useNavigate} from "react-router-dom";
+import {products} from "../ProducsPage/Products";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import BasketHeader from "../../components/BasketHeader/BasketHeader";
+import BasketFooter from "../../components/BasketFooter/BasketFooter";
 
 
 const BasketPage = () => {
     let navigate = useNavigate();
     const onCartButtonClickHandler = () => {
-        return navigate('/')
+        return navigate('/');
     }
+
+        const [items, setItems] = useState([]);
+
+        useEffect(() => {
+            const cart = JSON.parse(localStorage.getItem('cart'));
+
+            setItems(cart)
+        }, []);
 
     return (
         <div className={''}>
-            <button onClick={onCartButtonClickHandler}>TEST</button>
+            <BasketHeader />
+            <div className={'basket-wrapper'}>
+
+            </div>
+           <BasketFooter />
         </div>
 
     )
