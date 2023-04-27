@@ -1,3 +1,12 @@
 .footer-wrapper {
     display: flex;
+    justify-content: space-around;
+}
+
+.order-btn {
+    width: 200px;
+    height: 42px;
+    left: 950px;
+    top: 704px;
+    background: #D58C51;
 }

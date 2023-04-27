@@ -1,4 +1,5 @@
 import React from "react";
+import '../BasketFooter/BasketFooter.css'
 
 const BasketFooter = () => {
     return (
