@@ -1,7 +1,7 @@
 import React from "react";
 import '../BasketCard/BasketCard.css'
 
-const BasketCard = ({id, image, title, price,onRemoveHandler}) => {
+const BasketCard = ({id, image, title, price}) => {
 
     const onRemoveFromCartHandler = () => {
 

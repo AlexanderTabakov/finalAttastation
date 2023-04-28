@@ -33,7 +33,7 @@ const BasketPage = () => {
                         image={item.image}
                         title={item.title}
                         price={item.price}
-                        onRemoveHandler={setItems}
+                        // onRemoveHandler={setItems}
                         />
                     )
                 })
