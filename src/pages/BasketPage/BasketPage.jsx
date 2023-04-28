@@ -29,6 +29,7 @@ const BasketPage = () => {
                 items?.map(item=> {
                     return (
                         <BasketCard
+                        id={item.id}
                         key={item.id}
                         image={item.image}
                         title={item.title}
