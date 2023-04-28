@@ -1,9 +1,13 @@
 .footer-wrapper {
-    position: absolute;
+    /*position: absolute;*/
     display: flex;
     justify-content: space-around;
     width: 100%;
     bottom: 30px;
+    margin: 50px 0;
+    padding: 5px;
+    border-top: 3px solid #D58C51;
+
 }
 
 .order-btn {

@@ -19,16 +19,21 @@ const BasketPage = () => {
             setItems(cart)
         }, []);
 
+
     return (
-        <div className={''}>
+        <div className={'basket-wrapper'}>
             <BasketHeader />
-            <div className={'basket-wrapper'}> {
-                items.map(item=> {
+            <div className={'cards-in-basket'}>
+                {/*{items? <h1 className={'title-basket text'}>КОРЗИНА </h1>: <h1 className={'title-basket text'}>КОРЗИНА ПУСТА</h1>}*/}
+                {
+                items?.map(item=> {
                     return (
                         <BasketCard
                         key={item.id}
                         image={item.image}
+                        title={item.title}
                         price={item.price}
+                        onRemoveHandler={setItems}
                         />
                     )
                 })

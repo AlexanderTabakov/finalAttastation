@@ -1,14 +1,25 @@
-.basketCard {
+.cards-in-basket {
     display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 30px;
+
 }
 
 .remove-btn {
     background-color: #161516;
-    border: white solid 2px ;
+    border: #D58C51 solid 2px ;
     border-radius: 50%;
-    color: #fff;
     height: 40px;
     width: 40px;
     rotate: 45deg;
+    color: #D58C51;
+
+}
+
+.basketCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }

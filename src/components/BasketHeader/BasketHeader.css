@@ -4,6 +4,7 @@
     align-items: center;
     padding: 10px 30px;
     margin: 0 auto;
+    position: relative;
 
 }
 
@@ -29,10 +30,3 @@
     color: white;
 }
 
-.basket-wrapper {
-    display: flex;
-    /*justify-content: space-around;*/
-    align-items: center;
-    padding: 10px 30px;
-    margin: 0 auto;
-}
