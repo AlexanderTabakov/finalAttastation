@@ -13,6 +13,7 @@ const ProductPage = () => {
             <div className={'product-wrapper'}> {
                 products.map(product =>
                     <ProductCard
+                        id={product.id}
                         key={product.id}
                         image={product.image}
                         title={product.title}
