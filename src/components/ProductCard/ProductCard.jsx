@@ -1,9 +1,6 @@
 import React from "react";
 
-import {products} from "../../pages/ProducsPage/Products";
-
 import './ProductCard.css'
-
 
 const ProductCard = ({id, image, title, description, price, weight}) => {
 

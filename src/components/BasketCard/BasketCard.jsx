@@ -19,9 +19,9 @@ const BasketCard = ({id, image, title, price}) => {
 
                 <p className={'text title'}>{title}</p>
 
-                <p className={'text price'}>{price}₽ </p>
-
-                <button className={'remove-btn'} onClick={onRemoveFromCartHandler}>+</button>
+                <span>
+                    <p className={'text price'}>{price}₽  <button className={'remove-btn'} onClick={onRemoveFromCartHandler}>+</button> </p>
+                </span>
 
 
 
