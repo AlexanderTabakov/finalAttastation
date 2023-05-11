@@ -1,20 +1,17 @@
 {
   "files": {
-    "main.css": "/module_react/static/css/main.a53cd2f2.css",
-    "main.js": "/module_react/static/js/main.2a0e6eeb.js",
+    "main.css": "/module_react/static/css/main.05cb1b5d.css",
+    "main.js": "/module_react/static/js/main.21a3a471.js",
     "static/js/787.28cb0dcd.chunk.js": "/module_react/static/js/787.28cb0dcd.chunk.js",
-    "static/media/Oysters.svg": "/module_react/static/media/Oysters.c39b66f2c7f40d96990801c77f138948.svg",
-    "static/media/Ribs.svg": "/module_react/static/media/Ribs.1073232b593f28974b8333cdd4f6256e.svg",
-    "static/media/Shrimps.svg": "/module_react/static/media/Shrimps.9e5729dddd79e49ba4bd867772b99554.svg",
     "static/media/Basket-Icon.svg": "/module_react/static/media/Basket-Icon.1363fe210c482a130cdc77bd25f80046.svg",
-    "static/media/returnArrow.svg": "/module_react/static/media/returnArrow.84a26d1e92e48e534d2c12f85091cc94.svg",
     "index.html": "/module_react/index.html",
-    "main.a53cd2f2.css.map": "/module_react/static/css/main.a53cd2f2.css.map",
-    "main.2a0e6eeb.js.map": "/module_react/static/js/main.2a0e6eeb.js.map",
+    "static/media/returnArrow.svg": "/module_react/static/media/returnArrow.84a26d1e92e48e534d2c12f85091cc94.svg",
+    "main.05cb1b5d.css.map": "/module_react/static/css/main.05cb1b5d.css.map",
+    "main.21a3a471.js.map": "/module_react/static/js/main.21a3a471.js.map",
     "787.28cb0dcd.chunk.js.map": "/module_react/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a53cd2f2.css",
-    "static/js/main.2a0e6eeb.js"
+    "static/css/main.05cb1b5d.css",
+    "static/js/main.21a3a471.js"
   ]
 }
