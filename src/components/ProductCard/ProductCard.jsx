@@ -16,7 +16,7 @@ const ProductCard = ({id, image, title, description, price, weight}) => {
     };
 
     const onRemoveFromCartClickHandler = () => {
-        dispatch(removeFromCart({id, image, title, price}))
+        dispatch(removeFromCart(id))
         setAddState((prevState) => !prevState)
     };
 

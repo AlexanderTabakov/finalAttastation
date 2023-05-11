@@ -2,8 +2,6 @@ import React, {useEffect, useState} from "react";
 import './ProductsPage.css'
 import Header from "../components/Header/Header";
 import ProductCard from "../components/ProductCard/ProductCard";
-import {products} from "./ProducsPage/Products";
-import { Routes, Route, Link } from "react-router-dom";
 import axios from "axios";
 
 const ProductPage = () => {

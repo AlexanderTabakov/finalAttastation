@@ -8,7 +8,7 @@ const BasketCard = ({id, image, title, price}) => {
     const dispatch = useDispatch();
 
     const onRemoveFromCartHandler = () => {
-        dispatch(removeFromCart({id, image, title, price}))
+        dispatch(removeFromCart(id))
     }
 
     return (
@@ -19,7 +19,7 @@ const BasketCard = ({id, image, title, price}) => {
                 <p className={'text title'}>{title}</p>
 
                 <span>
-                    <p className={'text price'}>{price}₽  <button className={'remove-btn'} onClick={onRemoveFromCartHandler}>+</button> </p>
+                    <p className={'text price'} style={{color : '#D58C51'}}>{price}₽  <button className={'remove-btn'} onClick={onRemoveFromCartHandler}>+</button> </p>
                 </span>
 
         </div>

@@ -1,12 +1,9 @@
 import React from "react";
 import './BasketPage.css'
-import {products} from "../ProducsPage/Products";
-// import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
 import BasketHeader from "../../components/BasketHeader/BasketHeader";
 import BasketFooter from "../../components/BasketFooter/BasketFooter";
 import BasketCard from "../../components/BasketCard/BasketCard";
-import {useDispatch, useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 
 
 
