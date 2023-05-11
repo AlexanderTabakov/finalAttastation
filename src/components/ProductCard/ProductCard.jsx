@@ -1,21 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 
 import './ProductCard.css'
+import { useDispatch } from "react-redux";
+import { addToCart , removeFromCart } from "../../store/reducers/cart";
 
 const ProductCard = ({id, image, title, description, price, weight}) => {
 
+    const [isAdded, setAddState] = useState(false)
+
+    const dispatch = useDispatch();
+
     const onAddToCartClickHandler = () => {
+        dispatch(addToCart({id, image, title, price}))
+        setAddState((prevState) => !prevState)
+    };
 
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-        const product = { id, title, image, price, weight}
-
-        cart.push(product)
-
-        localStorage.setItem('cart', JSON.stringify(cart))
+    const onRemoveFromCartClickHandler = () => {
+        dispatch(removeFromCart({id, image, title, price}))
+        setAddState((prevState) => !prevState)
+    };
 
 
-    }
 
     return (
         <div className={'card'}>
@@ -26,7 +31,7 @@ const ProductCard = ({id, image, title, description, price, weight}) => {
             </div>
             <div className={'wrapper'}>
                 <p className={'text price'}>{price}₽ / {weight}</p>
-                <button className={'addToCartBtn'} onClick={onAddToCartClickHandler}>+</button>
+                <button className={'addToCartBtn'} onClick={isAdded ? onRemoveFromCartClickHandler : onAddToCartClickHandler}>{isAdded ? '-' : '+'}</button>
             </div>
 
 

@@ -6,18 +6,13 @@ import { useEffect, useState } from "react";
 import BasketHeader from "../../components/BasketHeader/BasketHeader";
 import BasketFooter from "../../components/BasketFooter/BasketFooter";
 import BasketCard from "../../components/BasketCard/BasketCard";
+import {useDispatch, useSelector} from "react-redux";
 
 
 
 const BasketPage = () => {
 
-        const [items, setItems] = useState([]);
-
-        useEffect(() => {
-            const cart = JSON.parse(localStorage.getItem('cart'));
-
-            setItems(cart)
-        }, []);
+       const productList = useSelector(({ cart }) => cart.list)
 
 
     return (
@@ -26,7 +21,7 @@ const BasketPage = () => {
             <div className={'cards-in-basket'}>
                 {/*{items? <h1 className={'title-basket text'}>КОРЗИНА </h1>: <h1 className={'title-basket text'}>КОРЗИНА ПУСТА</h1>}*/}
                 {
-                items?.map(item=> {
+                    productList?.map(item=> {
                     return (
                         <BasketCard
                         id={item.id}

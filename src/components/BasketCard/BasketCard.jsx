@@ -1,19 +1,18 @@
 import React from "react";
 import '../BasketCard/BasketCard.css'
+import { useDispatch } from "react-redux";
+import { removeFromCart } from "../../store/reducers/cart";
 
 const BasketCard = ({id, image, title, price}) => {
 
+    const dispatch = useDispatch();
+
     const onRemoveFromCartHandler = () => {
-
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-        const updCart = cart.filter(item => item.id !== id);
-        localStorage.setItem('cart', JSON.stringify(updCart))
-        // localStorage.removeItem('cart')
-
+        dispatch(removeFromCart({id, image, title, price}))
     }
 
     return (
+
         <div className={'basketCard'}>
                 <img className={'image'} src={image} alt="product"/>
 
@@ -22,11 +21,6 @@ const BasketCard = ({id, image, title, price}) => {
                 <span>
                     <p className={'text price'}>{price}₽  <button className={'remove-btn'} onClick={onRemoveFromCartHandler}>+</button> </p>
                 </span>
-
-
-
-
-
 
         </div>
     )

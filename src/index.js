@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { store } from './store'
+import { Provider } from 'react-redux';
+
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import { HashRouter, createHashRouter,} from 'react-router-dom';
 
 import ProductPage from "./pages/ProductPage";
-import Header from "./components/Header/Header";
 import reportWebVitals from './reportWebVitals';
 import Basket from "./pages/BasketPage/BasketPage";
 
@@ -20,11 +22,16 @@ const router = createHashRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+    <Provider store={store}>
+
   <React.StrictMode>
 
       <RouterProvider router={router} />
 
   </React.StrictMode>
+
+    </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
