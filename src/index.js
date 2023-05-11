@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { store } from './store'
 import { Provider } from 'react-redux';
 
-import {createBrowserRouter, RouterProvider,} from "react-router-dom";
-import { HashRouter, createHashRouter,} from 'react-router-dom';
+import { RouterProvider,} from "react-router-dom";
+import {  createHashRouter,} from 'react-router-dom';
 
 import ProductPage from "./pages/ProductPage";
 import reportWebVitals from './reportWebVitals';
