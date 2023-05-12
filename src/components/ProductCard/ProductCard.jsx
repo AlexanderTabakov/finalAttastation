@@ -1,15 +1,27 @@
-import React from "react";
-
-import {products} from "../../pages/ProducsPage/Products";
+import React, { useState } from "react";
 
 import './ProductCard.css'
+import { useDispatch } from "react-redux";
+import { addToCart , removeFromCart } from "../../store/reducers/cart";
 
-// import '../../assets/Oysters.svg'
-// import '../../assets/Ribs.svg'
-// import '../../assets/Shrimps.svg'
+const ProductCard = ({id, image, title, description, price, weight}) => {
 
-// const ProductCard = (image, title, description) => {
-const ProductCard = ({image, title, description, price, weight}) => {
+    const [isAdded, setAddState] = useState(false)
+
+    const dispatch = useDispatch();
+
+    const onAddToCartClickHandler = () => {
+        dispatch(addToCart({id, image, title, price}))
+        setAddState((prevState) => !prevState)
+    };
+
+    const onRemoveFromCartClickHandler = () => {
+        dispatch(removeFromCart(id))
+        setAddState((prevState) => !prevState)
+    };
+
+
+
     return (
         <div className={'card'}>
             <img className={'image'} src={image} alt="product"/>
@@ -19,8 +31,7 @@ const ProductCard = ({image, title, description, price, weight}) => {
             </div>
             <div className={'wrapper'}>
                 <p className={'text price'}>{price}₽ / {weight}</p>
-                {/*<p className={'text weight'}> /{weight}</p>*/}
-                <button className={'addToCartBtn'}>+</button>
+                <button className={'addToCartBtn'} onClick={isAdded ? onRemoveFromCartClickHandler : onAddToCartClickHandler}>{isAdded ? '-' : '+'}</button>
             </div>
 
 

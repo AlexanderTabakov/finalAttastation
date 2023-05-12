@@ -1,0 +1,27 @@
+.cards-in-basket {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 30px;
+
+}
+
+.remove-btn {
+    background-color: #161516;
+    border: #D58C51 solid 2px ;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    rotate: 45deg;
+    color: #D58C51;
+    cursor: pointer;
+    margin: 15px;
+
+}
+
+.basketCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
