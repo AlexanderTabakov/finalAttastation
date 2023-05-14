@@ -1,0 +1,8 @@
+
+.startPage {
+    background-image: url('./../../assets/StartPageBg.png');
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

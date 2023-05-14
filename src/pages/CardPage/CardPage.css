@@ -1,0 +1,7 @@
+.cardPage {
+    background-image: url('./../../assets/CardPageBg.png');
+    height: 300px;
+    width: 800px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

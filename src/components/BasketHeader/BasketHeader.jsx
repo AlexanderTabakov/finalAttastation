@@ -6,7 +6,7 @@ import returnArrow from './../../assets/returnArrow.svg'
 const BasketHeader = () => {
     return (
         <div className={'basket-header'}>
-                <Link to='/'>
+                <Link to='/productPage'>
                     <img src={returnArrow} alt={returnArrow}></img>
                 </Link>
                 <h1 className={'title-basket text'}>КОРЗИНА С ВЫБРАННЫМИ ТОВАРАМИ</h1>

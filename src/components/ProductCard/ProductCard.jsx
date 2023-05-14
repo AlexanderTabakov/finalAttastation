@@ -1,30 +1,33 @@
 import React, { useState } from "react";
 
 import './ProductCard.css'
-import { useDispatch } from "react-redux";
-import { addToCart , removeFromCart } from "../../store/reducers/cart";
+import {useDispatch, useSelector} from "react-redux";
+import cart, { addToCart , removeFromCart } from "../../store/reducers/cart";
+import {Link} from "react-router-dom";
 
 const ProductCard = ({id, image, title, description, price, weight}) => {
 
-    const [isAdded, setAddState] = useState(false)
+
+    const isAdded = useSelector(({cart}) => cart.list.find((product) => product.id === id ));
 
     const dispatch = useDispatch();
 
     const onAddToCartClickHandler = () => {
         dispatch(addToCart({id, image, title, price}))
-        setAddState((prevState) => !prevState)
     };
 
     const onRemoveFromCartClickHandler = () => {
         dispatch(removeFromCart(id))
-        setAddState((prevState) => !prevState)
     };
 
 
 
     return (
         <div className={'card'}>
-            <img className={'image'} src={image} alt="product"/>
+
+            <Link to={'/cardPage'}>
+                <img className={'image'} src={image} alt="product"/>
+            </Link>
             <div className={'card-description text'}>
                 <p className={'text title'}>{title}</p>
                 <p className={'text description'}>{description}</p>

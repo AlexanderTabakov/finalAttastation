@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import './ProductsPage.css'
-import Header from "../components/Header/Header";
-import ProductCard from "../components/ProductCard/ProductCard";
+import Header from "../../components/Header/Header";
+import ProductCard from "../../components/ProductCard/ProductCard";
 import axios from "axios";
 
 const ProductPage = () => {

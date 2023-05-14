@@ -10,7 +10,7 @@ import {useSelector} from "react-redux";
 const Header = () => {
      let navigate = useNavigate();
      const onCartButtonClickHandler = () => {
-         return navigate('./cart')
+         return navigate('/cart')
      };
 
      const totalPrice = useSelector(({cart})=> cart.totalPrice );

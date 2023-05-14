@@ -1,20 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { store } from './store'
+import  store, { persistor } from './store'
 import { Provider } from 'react-redux';
-
+import { PersistGate } from 'redux-persist/integration/react'
 import { RouterProvider,} from "react-router-dom";
 import {  createHashRouter,} from 'react-router-dom';
-
-import ProductPage from "./pages/ProductPage";
+import ProductPage from "./pages/ProductPage/ProductPage";
 import reportWebVitals from './reportWebVitals';
 import Basket from "./pages/BasketPage/BasketPage";
+import StartPage from "./pages/StartPage/StartPage";
+import CardPage from "./pages/CardPage/CardPage";
+
 
 const router = createHashRouter([
     {
         path: "/",
+        element: <StartPage/>
+    },
+    {
+        path: "/productPage",
         element: <ProductPage/>
-    },{
+    },
+    {
+        path: "/cardPage",
+        element: <CardPage/>
+    },
+    {
         path: "/cart",
         element: <Basket/>
     },
@@ -27,7 +38,11 @@ root.render(
 
   <React.StrictMode>
 
+      <PersistGate loading={null} persistor={persistor}>
+
       <RouterProvider router={router} />
+
+      </PersistGate>
 
   </React.StrictMode>
 
