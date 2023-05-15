@@ -17,7 +17,7 @@ const ProductPage = () => {
     }, [])
 
     return (
-        <div className={''}>
+        <div className={'productPageWrapper'}>
             <Header/>
             <div className={'product-wrapper'}> {
                 products.map(product =>

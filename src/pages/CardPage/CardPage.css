@@ -1,7 +1,27 @@
 .cardPage {
-    background-image: url('./../../assets/CardPageBg.png');
-    height: 300px;
-    width: 800px;
+    /*background-image: url('./../../assets/CardPageBg.png');*/
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
+}
+.modal {
+display: flex;
+    justify-content: space-between;
+}
+
+.modal-description {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+}
+
+.addToCartBtnModal {
+    width: 150px;
+    height: 50px;
+    background-color: #D58C51;
+    border: none;
+    border-radius: 3px;
+    margin-left: 40px;
+
 }

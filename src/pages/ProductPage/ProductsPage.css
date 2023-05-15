@@ -16,5 +16,15 @@ body {
     flex-wrap: wrap;
     /*width: 1600px;*/
     padding: 20px 20px;
+    overflow: auto;
+
+
 }
+
+/*.productPageWrapper {*/
+/*    !*height: calc(100vh - 190px);*!*/
+/*    overflow: auto;*/
+/*}*/
+
+
 

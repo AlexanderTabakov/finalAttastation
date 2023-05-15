@@ -23,6 +23,8 @@
     flex-wrap: wrap;
     padding: 0 180px;
     /*width: 1600px;*/
+    /*position: fixed;*/
+    top: 0;
 }
 
 .order {
