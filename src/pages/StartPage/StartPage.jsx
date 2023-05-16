@@ -15,10 +15,6 @@ const StartPage = () => {
             <Auth/>
         <div className={'startPage'}>
 
-            <Link to='/productPage'>
-                <img src={returnArrow} alt={returnArrow}></img>
-            </Link>
-
         </div>
         </>
     )

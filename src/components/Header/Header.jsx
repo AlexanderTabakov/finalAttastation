@@ -22,6 +22,10 @@ const Header = ({title}) => {
          dispatch(clearTheCart())
      };
 
+     // const test = () => {
+     //     dispatch(clearTheCart())
+     // }
+
      const totalPrice = useSelector(({cart})=> cart.totalPrice );
      const totalProduct = useSelector(({cart})=> cart.productCount );
 

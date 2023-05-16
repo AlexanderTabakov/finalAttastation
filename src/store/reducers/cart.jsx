@@ -26,9 +26,9 @@ export const cartSlice = createSlice({
         },
         clearTheCart: (state) => {
 
-            state.totalPrice = '';
-            state.list = '';
-            state.productCount = '';
+            state.totalPrice = 0;
+            state.list = [];
+            state.productCount = 0;
 
         },
     },
