@@ -22,7 +22,8 @@ const Input = ({ type, validate, onUpdate}) => {
         };
 
         return(
-            <><input type={type} value={value} onInput={onInputHandler}/>
+            <>
+                <input type={type} value={value} onInput={onInputHandler}/>
                 {errorMessage && <span style={{color:'red'}}>{errorMessage}</span>}
             </>
         )
