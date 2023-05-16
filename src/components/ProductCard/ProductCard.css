@@ -39,15 +39,6 @@
     height: 230px;
 }
 
-/*.card-description:hover {*/
-/*    color: #D58C51;*/
-
-/*}*/
-
-/*.image {*/
-/*    width: 270px;*/
-/*    height: 270px;*/
-/*}*/
 
 .wrapper {
     margin-top: 40px;
@@ -69,10 +60,45 @@
     color: #fff;
     height: 40px;
     width: 40px;
+    cursor: pointer;
 }
 
 .addToCartBtn:hover {
     background-color: orange;
+}
+
+.modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-description {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+}
+
+.addToCartBtnModal {
+    width: 150px;
+    height: 50px;
+    background-color: #D58C51;
+    border: none;
+    border-radius: 3px;
+    margin-left: 40px;
+
+}
+
+.ReactModal__Body--open {
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.ReactModal__Overlay .ReactModal__Overlay--after-open  {
+    background-color: #282c34;
+}
+
+.ReactModal__Overlay--after-open {
+    background-color: #282c34;
 }
 
 

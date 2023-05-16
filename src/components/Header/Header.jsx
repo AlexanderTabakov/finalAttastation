@@ -49,7 +49,7 @@ const Header = ({title}) => {
                     <p> на сумму {totalPrice} ₽</p>
                 </div>
 
-                <img className={'image'} src={imgBasket} alt="product" onClick={onCartButtonClickHandler}/>
+                <img className={'image'} style={{cursor: 'pointer'}} src={imgBasket} alt="product" onClick={onCartButtonClickHandler}/>
                 <button className={'btn-logout'} onClick={onLogout}>Выйти</button>
             </div>
         </div>
