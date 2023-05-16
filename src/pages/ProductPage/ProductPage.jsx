@@ -18,7 +18,7 @@ const ProductPage = () => {
 
     return (
         <div className={'productPageWrapper'}>
-            <Header/>
+            <Header title={'Наша Продукция'}/>
             <div className={'product-wrapper'}> {
                 products.map(product =>
                     <ProductCard

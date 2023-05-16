@@ -9,8 +9,9 @@ import { persistStore, persistReducer,  FLUSH,
 import storage from 'redux-persist/lib/storage'
 
 import cart from './reducers/cart'
+import user from "./reducers/user";
 
-const rootReducer = combineReducers({cart})
+const rootReducer = combineReducers({ cart,user })
 
 const persistConfig = {
     key: 'root',

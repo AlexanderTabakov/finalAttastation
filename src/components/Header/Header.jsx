@@ -3,14 +3,23 @@ import React from "react";
 import './Header.css'
 import imgBasket from '../../assets/Basket-Icon.svg'
 import {useNavigate} from "react-router-dom";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {logOut} from "../../store/reducers/user";
+import {clearTheCart} from "../../store/reducers/cart";
 // import { icon } from '@fortawesome/fontawesome-svg-core/import.macro'
 
 
-const Header = () => {
+const Header = ({title}) => {
      let navigate = useNavigate();
      const onCartButtonClickHandler = () => {
          return navigate('/cart')
+     };
+
+     const dispatch = useDispatch();
+
+     const onLogout = () => {
+         dispatch(logOut())
+         dispatch(clearTheCart())
      };
 
      const totalPrice = useSelector(({cart})=> cart.totalPrice );
@@ -28,7 +37,7 @@ const Header = () => {
 
     return (
         <div className={'header'}>
-            <h1>Наша продукция</h1>
+            <h1>{title}</h1>
             <div className={'basket'}>
 
                 <div className={'order'}>
@@ -37,6 +46,7 @@ const Header = () => {
                 </div>
 
                 <img className={'image'} src={imgBasket} alt="product" onClick={onCartButtonClickHandler}/>
+                <button className={'btn-logout'} onClick={onLogout}>Выйти</button>
             </div>
         </div>
     )

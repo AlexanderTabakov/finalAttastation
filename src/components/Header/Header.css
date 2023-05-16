@@ -16,12 +16,12 @@
 }
 
 .header {
-    margin: 80px 70px;
+    /*margin: 80px 70px;*/
     display: flex;
     justify-content: space-between;
     gap: 35px;
     flex-wrap: wrap;
-    padding: 0 180px;
+    /*padding: 0 180px;*/
     /*width: 1600px;*/
     /*position: fixed;*/
     top: 0;
@@ -48,10 +48,27 @@
 .basket {
     display: flex;
     align-items: center;
+    gap: 15px;
 
 
 }
 
 .order > p {
     margin: 0px;
+}
+
+.btn-logout {
+    width: 200px;
+    height: 42px;
+    border: 1px solid #D58C51;
+    background: rgba(0, 0, 0, 0);
+    font-family: 'Montserrat' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+
+    color: #D58C51;
 }
