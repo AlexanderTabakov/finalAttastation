@@ -44,14 +44,14 @@ const ProductCard = ({id, image, title, description, price, weight}) => {
             marginRight: '-50%',
             transform: 'translate(-50%, -50%)',
             backgroundImage: `url(${cardPageBg})`,
-            width: '80%'
+            width: '80%',
+            height: '40%'
 
         },
     };
 
 
     const modalContent = (
-        <><Header />
         <div className={'modal'}>
 
             <img className={'image'} src={image} alt="product"/>
@@ -65,7 +65,7 @@ const ProductCard = ({id, image, title, description, price, weight}) => {
                 {/*<button onClick={closeModal}>Закрыть</button>*/}
             </div>
         </div>
-            </>
+
     );
 
 

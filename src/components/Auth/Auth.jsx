@@ -2,8 +2,9 @@ import React, {useRef, useState} from "react";
 import '../Auth/Auth.css'
 import axios from "axios";
 import {useDispatch} from "react-redux";
-import { login, logOut } from "../../store/reducers/user";
+import { login } from "../../store/reducers/user";
 import Input from "../input";
+
 
 const emailValidate = (email, onError) => {
 
@@ -120,8 +121,6 @@ const RegForm = () => {
         password: ''
     })
 
-    const username = useRef();
-    const password = useRef();
 
     const onUpdateHandler = (field, value) => {
 
@@ -148,8 +147,10 @@ const RegForm = () => {
                 <button onClick={onRegister}>Войти</button>
 
 
-            <label  htmlFor=''>Я согласен получать обновления на почту
-                <input type='checkbox' className={'custom-checkbox'}/>
+
+            <label htmlFor='' className={'custom-radio'}>
+                <input type='checkbox'/>
+                <span>Я согласен получать обновления на почту</span>
             </label>
 
             <button onClick={onRegister}>Зарегистрироваться</button>
