@@ -3,6 +3,26 @@ import '../Auth/Auth.css'
 import axios from "axios";
 import {useDispatch} from "react-redux";
 import { login, logOut } from "../../store/reducers/user";
+import Input from "../input";
+
+const emailValidate = (email, onError) => {
+
+    if(email) {
+        const regExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+        return regExp.test(email);
+    }else {
+        onError('Поле обязательно для заполнения')
+    }
+    return false;
+};
+
+const passwordValidate = (password, onError) => {
+    if (password) {
+        return password.length >= 4
+    }
+
+};
 
 
 const AuthView = () => {
@@ -28,7 +48,7 @@ const AuthView = () => {
     return (
         <div className={'form'}>
             <h1>Вход</h1>
-            <input type='text' ref={username} defaultValue={'qwerty@mail.ru'}/>
+            <input type='text' ref={username} defaultValue={'qwerty@mail.ru'} onInput={emailValidate}/>
             <input type='password' ref={password} defaultValue={'12345'}/>
             <button onClick={onLogin}>Войти</button>
         </div>
@@ -75,7 +95,9 @@ const Auth = () => {
 
     const changeView = () => {
         setAuthView((prevState) => !prevState)
-    }
+    };
+
+
 
     return (
         <div className={'auth'}>
