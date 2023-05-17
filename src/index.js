@@ -9,7 +9,6 @@ import ProductPage from "./pages/ProductPage/ProductPage";
 import reportWebVitals from './reportWebVitals';
 import Basket from "./pages/BasketPage/BasketPage";
 import StartPage from "./pages/StartPage/StartPage";
-import CardPage from "./pages/CardPage/CardPage";
 import PrivateRoute from "./components/PrivateRoute";
 import PublicRoute from "./components/PublicRoute";
 
@@ -23,10 +22,7 @@ const router = createHashRouter([
         path: "/productPage",
         element: <PrivateRoute><ProductPage/></PrivateRoute>
     },
-    {
-        path: "/cardPage/:id",
-        element: <PrivateRoute><CardPage/></PrivateRoute>
-    },
+
     {
         path: "/cart",
         element: <PrivateRoute><Basket/></PrivateRoute>

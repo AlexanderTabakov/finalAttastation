@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-
 import './ProductCard.css'
 import {useDispatch, useSelector} from "react-redux";
 import  { addToCart , removeFromCart } from "../../store/reducers/cart";
 import Modal from 'react-modal';
-import Header from "../Header/Header";
 import cardPageBg from '../../assets/CardPageBg.png'
 
 

@@ -1,4 +1,4 @@
-import React, {useRef, useState} from "react";
+import React, { useState } from "react";
 import '../Auth/Auth.css'
 import axios from "axios";
 import {useDispatch} from "react-redux";
@@ -82,38 +82,7 @@ const AuthForm = () => {
 };
 
 
-// const AuthView = () => {
-//
-//     const username = useRef();
-//     const password = useRef();
-//
-//     const dispatch = useDispatch();
-//
-//
-//     const onLogin = () => {
-//         axios.post('http://localhost:3004/login', {
-//             email: username.current.value,
-//             password: password.current.value
-//         })
-//
-//         .then(({ data }) => dispatch(login({
-//             accessToken: data.accessToken,
-//             ...data.user,
-//         })));
-//     };
-//
-//     return (
-//         <div className={'form'}>
-//             <h1>Вход</h1>
-//             <input type={'email'} onInput={emailValidate} ref={username} defaultValue={'qwerty@mail.ru'}/>
-//             <input type='password'  ref={password} defaultValue={'12345'} onInput={passwordValidate}/>
-//             <button onClick={onLogin}>Войти</button>
-//         </div>
-//     );
-//
-// };
-//
-//
+
 const RegForm = () => {
 
     const [userData, setUserData] = useState({
@@ -182,5 +151,5 @@ const Auth = () => {
 
 };
 
-// export default Auth;
+
 export default Auth;
