@@ -18,9 +18,8 @@ export const cartSlice = createSlice({
         },
         removeFromCart: (state, { payload }) => {
 
-            state.totalPrice -= state.list.find((product) => product.id === payload).price // а эта запись не работает
+            state.totalPrice -= state.list.find((product) => product.id === payload).price
             state.list = state.list.filter((product) => product.id !== payload )
-            // state.totalPrice -= payload.price; // работает, но кнопка не сохраняет состояние при переходе на другую страницу
             state.productCount --;
 
         },
