@@ -53,7 +53,7 @@ const ProductCard = ({id, image, title, description, price, weight}) => {
     const modalContent = (
         <div className={'modal'}>
 
-           <div> <img className={'image'} src={image} alt="product"/></div>
+            <img className={'image'} src={image} alt="product"/>
             <div className={'modal-description'}>
                 <h2 style={{color:'#D58C51'}}>{title}</h2>
                 <p className={'text'}>{description}</p>

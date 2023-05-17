@@ -1,9 +1,9 @@
 .card {
     width: 312px;
-    height: 552px;
+    height: fit-content;
     box-sizing: border-box;
     border: 1px solid #D58C51;
-    padding: 40px 20px;
+    padding: 22px 22px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -19,6 +19,7 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     color: white;
+    overflow: auto;
 }
 
 .title {
@@ -70,6 +71,12 @@
 .modal {
     display: flex;
     justify-content: space-between;
+    height: 450px;
+    align-items: center;
+}
+
+.modal > img {
+    width: 400px;
 }
 
 .modal-description {

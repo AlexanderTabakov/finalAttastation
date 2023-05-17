@@ -11,6 +11,7 @@ import Basket from "./pages/BasketPage/BasketPage";
 import StartPage from "./pages/StartPage/StartPage";
 import PrivateRoute from "./components/PrivateRoute";
 import PublicRoute from "./components/PublicRoute";
+import NotFoundPage from "./pages/NorFoundPage/NotFoundPage";
 
 
 const router = createHashRouter([
@@ -26,6 +27,10 @@ const router = createHashRouter([
     {
         path: "/cart",
         element: <PrivateRoute><Basket/></PrivateRoute>
+    },
+    {
+        path: "*",
+        element: <NotFoundPage/>
     },
 ]);
 

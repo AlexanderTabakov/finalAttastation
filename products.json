@@ -29,6 +29,16 @@
       "email": "12qwerty@mail.ru",
       "password": "$2a$10$YWVEmya0/nC.UVJZDt5m/OGGNn5S3zkusAr7nU0aHjzQv2K8AY2bK",
       "id": 6
+    },
+    {
+      "email": "15qwerty@mail.ru",
+      "password": "$2a$10$8l7SggcUQDWu9GJIIia5HuRCbWdRkhFZ9V0QXAyD6ZU42idl9Arru",
+      "id": 7
+    },
+    {
+      "email": "16qwerty@mail.ru",
+      "password": "$2a$10$.IGOk0V6Hd3a/e5fiOZ38e7PZubXNRyCPrZ1EIlmeoCK.D52bcPuy",
+      "id": 8
     }
   ],
   "products": [
