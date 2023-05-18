@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import StartPage from "../pages/StartPage/StartPage";
+
 
 const Input = ({ type, validate, onUpdate}) => {
     const [value, setValue] = useState('');

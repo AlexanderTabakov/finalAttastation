@@ -19,6 +19,11 @@
       "email": "3qwerty@mail.ru",
       "password": "$2a$10$hxYJnuBQBEwivQvAGDJNM.UlgZiwur2/S83CSLqcBOHgiL7ogI4ZS",
       "id": 4
+    },
+    {
+      "email": "11qwerty@mail.ru",
+      "password": "$2a$10$4PhaIm5iIG0DFRGoB9Kwfet6cc7Bi7Uf1I/faWAq0ETA7tAQ8MXc6",
+      "id": 5
     }
   ],
   "products": [
