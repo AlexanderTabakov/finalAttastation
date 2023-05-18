@@ -4,13 +4,13 @@ import axios from "axios";
 import {useDispatch} from "react-redux";
 import { login } from "../../store/reducers/user";
 import Input from "../input";
-import checkBox from '../../assets/checkbox.svg'
+
 
 
 const emailValidate = (email, onError) => {
 
     if(email) {
-        const regExp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        const regExp = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 
         if (regExp.test(email)) {
             onError('');

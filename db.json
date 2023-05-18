@@ -2,28 +2,23 @@
   "users": [
     {
       "email": "qwerty@mail.ru",
-      "password": "$2a$10$8/ZDZFSpqTY2qQZw1jWarOky5sNK5Yd.z7QMOte853Aib1AJrj7JC",
+      "password": "$2a$10$AAsEkpsYooyGIQ7WiUDE7ubpAwfXk9PU6Acu4jtwi2two99FqrWXe",
       "id": 1
     },
     {
-      "email": "qwerty@mail.ra",
-      "password": "$2a$10$QfkwrODgf/8lqymOIOeWoO7UIMbocfwGzcaQCGlDG1z6jxSdYE9Hu",
+      "email": "1qwerty@mail.ru",
+      "password": "$2a$10$OLMmCY48IUgka6EhHuCZJuIROFZRHhFdYsvWgC7rjDjSAWvfc/4Oi",
       "id": 2
     },
     {
-      "email": "1qwerty@mail.ru",
-      "password": "$2a$10$eU3WyMCLRx26V6ADI./Dsu6rJ.iAIA6p6P0d2cHUrx0px.rYiNigq",
+      "email": "2qwerty@mail.ru",
+      "password": "$2a$10$FcB8arfc7DG8PvEUg5IDH.1ry1A1YvB6/cFr9uPgsWRa.ipL8oS1C",
       "id": 3
     },
     {
-      "email": "2qwerty@mail.ru",
-      "password": "$2a$10$M6Bma7OA2Pv/NLHVkApUGeOo.V6ARLwcQ7oair1dg9pHoaMwyyoqK",
+      "email": "3qwerty@mail.ru",
+      "password": "$2a$10$hxYJnuBQBEwivQvAGDJNM.UlgZiwur2/S83CSLqcBOHgiL7ogI4ZS",
       "id": 4
-    },
-    {
-      "email": "11qwerty@mail.ru",
-      "password": "$2a$10$MOPH8djZCcSpouy/GoA6wut1VocfUlgCaopa0..Ke4mILX3/FcH52",
-      "id": 5
     }
   ],
   "products": [

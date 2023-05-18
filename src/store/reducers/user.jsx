@@ -5,21 +5,19 @@ export const userSlice = createSlice({
     name: 'user',
     initialState: {
         email: '',
-        username: '',
-        token: '',
+        accessToken: '',
 
     },
     reducers: {
         login: (state, {payload}) => {
-            const { email, username, accessToken } = payload;
+            const { email, accessToken } = payload;
             state.email = email;
-            state.username = username;
-            state.accsessToken = accessToken;
+            // state.username = username;
+            state.accessToken = accessToken;
         },
         logOut: (state) => {
             state.email = '';
-            state.username = '';
-            state.accsessToken = '';
+            state.accessToken = '';
         }
     },
 })
