@@ -114,9 +114,6 @@ const RegForm = () => {
             <h1>Регистрация</h1>
                 <Input type={'email'} validate={emailValidate} onUpdate={onUpdateHandler}/>
                 <Input type={'password'} validate={passwordValidate} onUpdate={onUpdateHandler}/>
-                <button onClick={onRegister}>Войти</button>
-
-
 
             <label className={'custom-radio'}>
                 <input type='checkbox'/>
