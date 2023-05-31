@@ -44,6 +44,13 @@ const passwordValidate = (password, onError) => {
 
 };
 
+const test = () => {
+    if (emailValidate && passwordValidate) {
+        alert('Теперь вы можете войти используя свои данные')
+    }
+}
+
+
 const AuthForm = () => {
     const [authData, setAuthData] = useState({
         email: '',
@@ -106,6 +113,7 @@ const RegForm = () => {
     const onRegister = () => {
         axios.post('http://localhost:3004/register/', userData)
             .then((result)=> console.log(result));
+        test()
     };
 
 

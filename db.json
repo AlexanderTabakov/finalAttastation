@@ -24,6 +24,26 @@
       "email": "11qwerty@mail.ru",
       "password": "$2a$10$4PhaIm5iIG0DFRGoB9Kwfet6cc7Bi7Uf1I/faWAq0ETA7tAQ8MXc6",
       "id": 5
+    },
+    {
+      "email": "BudKakDomaPutnik@mail.ru",
+      "password": "$2a$10$sd5DDMW8o/tQsrW2g5C2Nev0ca0zZbJB/XAHXknPwGmeSWvmlVC3a",
+      "id": 6
+    },
+    {
+      "email": "55qwerty@mail.ru",
+      "password": "$2a$10$t34VhAXiG79h.mKhT5VWXOBcykx1cvr11Mbk7fS4C3J8vQwKScwva",
+      "id": 7
+    },
+    {
+      "email": "333qwerty@mail.ru",
+      "password": "$2a$10$hbyv8XEStjTXIXIr./YR5OCZP.0X0/1P3Cpu4zOoceg6dY/YjfY2K",
+      "id": 8
+    },
+    {
+      "email": "13qwerty@mail.ru",
+      "password": "$2a$10$l7PVCC1vdeBmKuoc8tVaAeeK68xD.pPAKjTNCsz8OFxAcsSaLqkAy",
+      "id": 9
     }
   ],
   "products": [
